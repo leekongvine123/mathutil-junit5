@@ -38,3 +38,9 @@ jobs:
         with:
           name: 1.0-SNAPSHOT.jar
           path: staging
+
+      - name: Prevent Push on Failure
+        if: failure() # This step will run if any of the previous steps fail
+        run: |
+          echo "Build failed. Code contains errors or tests didn't pass. Push is not allowed."
+          exit 1
