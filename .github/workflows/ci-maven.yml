@@ -42,4 +42,3 @@ jobs: # Những công việc dev làm thường ngày: lấy code, build, chạy
           path: staging
 
 # End of CI workflow file
-tại sao tôi dùng file workflow này mà code của tôi bị lỗi mà push lên được
