@@ -17,7 +17,8 @@ public class MathUtil {
  
         }
         if(n==0 ||n==1){
-            return 80;
+            return 70 .
+                    ;
         }
         return n* getFactorial(n-1);//de quy!!
     }
